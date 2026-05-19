@@ -44,7 +44,7 @@ body {
     linear-gradient(180deg, var(--bg), var(--surface-soft));
   color: var(--text);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 a {
@@ -486,32 +486,144 @@ h3 {
   .site-header,
   .section,
   .site-footer {
-    width: min(100% - 22px, 1120px);
+    width: min(100% - 28px, 1120px);
   }
 
   .site-header {
+    grid-template-columns: 1fr 40px;
+    gap: 10px;
+    min-height: auto;
     margin-top: 10px;
+    padding: 10px;
   }
 
   .brand span:last-child {
     display: none;
   }
 
+  .brand-mark,
+  .icon-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 4px;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
+    padding: 7px 10px;
+    font-size: 0.86rem;
+  }
+
   .section {
-    padding: 64px 0;
+    padding: 54px 0;
   }
 
   .hero {
-    padding-top: 38px;
+    gap: 26px;
+    padding-top: 36px;
   }
 
-  .quick-stats,
+  h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.12;
+  }
+
+  h2 {
+    font-size: clamp(1.55rem, 7vw, 2.2rem);
+  }
+
+  .hero-text {
+    margin-top: 16px;
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    display: grid;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .quick-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .quick-stats div {
+    min-height: 78px;
+    padding: 12px 8px;
+  }
+
+  .quick-stats dt {
+    font-size: 1rem;
+  }
+
+  .quick-stats dd {
+    font-size: 0.76rem;
+    line-height: 1.35;
+  }
+
+  .hero-visual {
+    width: min(100%, 420px);
+    padding: 10px;
+  }
+
+  .hero-visual::before {
+    inset: 16% 0 0 12%;
+  }
+
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
+  .skill-card {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .skill-icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 14px;
+  }
+
+  .project-media {
+    min-height: 145px;
+  }
+
+  .project-body,
+  .contact-form {
+    padding: 18px;
+  }
+
   .hero-actions .button {
     width: 100%;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    padding-bottom: 28px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-links a {
+    padding-inline: 8px;
+  }
+
+  .quick-stats {
+    grid-template-columns: 1fr;
   }
 }
