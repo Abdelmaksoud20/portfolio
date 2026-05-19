@@ -1,0 +1,30 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Digital mobile portfolio interface</title>
+  <desc id="desc">An interface illustration showing a profile card, charts, and project components.</desc>
+  <rect width="960" height="720" rx="26" fill="#F6F8F8"/>
+  <rect x="64" y="70" width="832" height="580" rx="22" fill="#202522"/>
+  <rect x="64" y="70" width="832" height="70" rx="22" fill="#126C71"/>
+  <circle cx="116" cy="106" r="12" fill="#E27B62"/>
+  <circle cx="154" cy="106" r="12" fill="#DFBD5B"/>
+  <circle cx="192" cy="106" r="12" fill="#92D4CC"/>
+  <rect x="112" y="188" width="310" height="398" rx="18" fill="#FFFFFF"/>
+  <rect x="150" y="232" width="122" height="122" rx="28" fill="#126C71"/>
+  <path d="M196 307L213 258L231 307H217L213 292H196L192 307H196Z" fill="#F6F8F8"/>
+  <rect x="150" y="392" width="214" height="18" rx="9" fill="#202522"/>
+  <rect x="150" y="430" width="184" height="14" rx="7" fill="#667075"/>
+  <rect x="150" y="464" width="236" height="14" rx="7" fill="#667075"/>
+  <rect x="150" y="508" width="92" height="38" rx="8" fill="#C8523B"/>
+  <rect x="258" y="508" width="106" height="38" rx="8" fill="#126C71"/>
+  <rect x="468" y="188" width="342" height="172" rx="18" fill="#FFFFFF"/>
+  <path d="M512 308C551 257 595 281 624 248C662 205 715 228 762 206" stroke="#126C71" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="512" cy="308" r="13" fill="#126C71"/>
+  <circle cx="624" cy="248" r="13" fill="#C8523B"/>
+  <circle cx="762" cy="206" r="13" fill="#DFBD5B"/>
+  <rect x="468" y="394" width="150" height="192" rx="18" fill="#DFBD5B"/>
+  <rect x="504" y="438" width="78" height="18" rx="9" fill="#202522"/>
+  <rect x="504" y="480" width="62" height="70" rx="12" fill="#FFFFFF"/>
+  <rect x="650" y="394" width="160" height="192" rx="18" fill="#C8523B"/>
+  <rect x="686" y="438" width="86" height="18" rx="9" fill="#FFFFFF"/>
+  <rect x="686" y="480" width="88" height="18" rx="9" fill="#FFFFFF" opacity=".74"/>
+  <rect x="686" y="518" width="58" height="18" rx="9" fill="#FFFFFF" opacity=".74"/>
+</svg>
