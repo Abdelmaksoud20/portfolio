@@ -1,6 +1,8 @@
 const root = document.documentElement;
 const year = document.querySelector("[data-year]");
 const themeToggle = document.querySelector("[data-theme-toggle]");
+const menuToggle = document.querySelector("[data-menu-toggle]");
+const header = document.querySelector("[data-header]");
 const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
@@ -22,6 +24,20 @@ themeToggle.addEventListener("click", () => {
     delete root.dataset.theme;
     localStorage.removeItem("portfolio-theme");
   }
+});
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = header.classList.toggle("menu-open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    header.classList.remove("menu-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open menu");
+  });
 });
 
 const observer = new IntersectionObserver(
